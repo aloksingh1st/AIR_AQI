@@ -1,0 +1,15 @@
+header{
+    background-color: #009879;
+    padding: 1.3rem;
+}
+
+.wish-button{
+    float: right;
+    color: white;
+    background-color: #009879;
+    padding: 14px;
+    box-shadow: 4px 4px 16px black;
+    border-radius: 10px;
+    margin-top: -50px;
+
+}

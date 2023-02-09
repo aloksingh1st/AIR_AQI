@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-6">
+      <form #signInForm="ngForm" (ngSubmit)="signInForm.valid && onUpdate(signInForm)">
+        <div class="form-group">
+          <!-- <select formControlName="country" class="form-control" (change)="onChangeCountry($event)"> -->
+              <div class="password-container">
+
+                  <input type="password" name="newPassword" id="password" class="form-control pass" placeholder="Enter New Password" #newPassword="ngModel" [(ngModel)]="model.newPassword" required minlength="4">
+                  <div class="error" *ngIf="signInForm.submitted && !newPassword.valid "> *Password length should be greater than 3</div>
+                  <input type="submit" value="Update">
+                </div>
+           
+        </div>
+       
+      </form>
+      </div>
+      </div>

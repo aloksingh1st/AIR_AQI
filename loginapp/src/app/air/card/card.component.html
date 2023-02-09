@@ -1,0 +1,66 @@
+<div class="card">
+    <div class="top-bare {{level}}">
+        <ul>
+            <li class="box">USAQI <h5>{{fData.current.pollution.aqius}}</h5></li>
+            <li>{{level}}</li>
+        </ul>
+        <button class="wishlist" (click)="con()">Add to Watch List</button>
+    </div>
+    <h2>Overview</h2>
+    <h3>What is the current air quality in {{fData.city}} ?</h3>
+    <table>
+        <tr>
+
+            <th>
+                Air pollution level
+            </th>
+            <th>
+                Air quality index
+            </th>
+            <th>
+                Main pollutant
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+               {{level}}
+            </td>
+            <td>
+                {{fData.current.pollution.aqius }}
+            </td>
+            <td>
+                {{fData.current.pollution.mainus }}
+            </td>
+        </tr>
+    </table>
+    <h2>Weather</h2>
+
+    <table>
+        <tr>
+
+            <th>
+                Temperature
+            </th>
+            <th>
+                Wind
+            </th>
+            <th>
+               Humidity
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                {{fData.current.weather.tp}}
+            </td>
+            <td>
+                {{fData.current.weather.ws}}
+            </td>
+            <td>
+                {{fData.current.weather.hu}}
+            </td>
+        </tr>
+    </table>
+
+</div>

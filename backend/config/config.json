@@ -1,0 +1,6 @@
+{
+    "development":{
+        "PORT":4000,
+         "MOGODB_URI":"mongodb://localhost:27017/register"
+    }
+}

@@ -1,0 +1,20 @@
+.pass{
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px black;
+    /* margin-left:30rem; */
+}
+
+.password-container{
+    margin-left:30rem;
+}
+.password-container input[type ='submit']{
+    float: right;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 4px 4px 15px black;
+}

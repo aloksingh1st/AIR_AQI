@@ -1,0 +1,129 @@
+.card{
+    border: 2px solid black;
+    margin: 10rem 15rem;
+    height: 800px;
+    /* padding: 2rem; */
+    box-shadow: 4px 4px 26px black;
+}
+.watched{
+    background-color: gray;
+}
+.Good{
+    background-color: #009879;
+}
+
+.Moderate{
+    background-color: #fdd64b;
+}
+
+.Unhealthy{
+    background-color: rgb(211, 5, 5);
+}
+
+.sensative{
+    background-color: #c55408;
+}
+
+.Very{
+    background-color: rgb(88, 2, 88);
+}
+
+.Hazardous{
+    background-color: maroon;
+}
+.card .top-bare{
+    width: 100%;
+    border: 2px solid black;
+    padding-top:2rem;
+    display: flex;
+    /* overflow: hidden; */
+    /* height: 20rem; */
+}
+
+
+.wishlist{
+    /* float: right; */
+    margin: 0 20%;
+    background-color:#009879 ;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1.3rem;
+    border-radius: 10px;
+    height: 70px;
+    cursor: pointer;
+    
+}
+h2{
+    color: rgba(0, 136, 255, 0.977);
+    margin: 2rem;
+}
+
+table{
+        border-collapse: collapse;
+
+        margin: 2rem 20%;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        width: 5vd;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    table tr {
+        background-color: #009879;
+        color: #000;
+        text-align: left;
+    }
+
+    table th,
+    table td {
+        padding: 12px 15px;
+    }
+    
+
+    table tr {
+        border-bottom: 1px solid #dddddd;
+    }
+    
+    table tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .styled-table tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    .styled-table tr.active-row {
+        font-weight: bold;
+        color: #009879;
+    }
+h3{
+    margin: 10px 20%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.box{
+    display: flex;
+    width: 113px;
+    height: 36px;
+    color: #fff;
+    border-radius: 4px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 12px;
+    margin-right: 24px;
+    background: #f27e2f;
+}
+
+table:hover{
+    box-shadow: 4px 4px 15px black;
+}
+
+.wishlist:hover{
+    box-shadow: 4px 4px 15px black;
+}

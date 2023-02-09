@@ -1,0 +1,39 @@
+
+<div class="create-account">
+    <div class="row">
+      <div class="col-md-6">
+        <form [formGroup]="createAccountForm">
+          <div class="form-group">
+            <select formControlName="country" class="form-control" (change)="onChangeCountry($event)">
+              <option value="">Select country...</option>
+              <option *ngFor="let c of country" value={{c.country}}>{{c.country}}</option>
+            </select>
+          </div>
+           <div class="form-group">
+            <select formControlName="state" class="form-control" (change)="onChangeState($event)">
+              <option value="">Select state...</option>
+              <option *ngFor="let st of state" value={{st.state}}>{{st.state}}</option>
+            </select>
+          </div>
+         <div class="form-group">
+            <select formControlName="city" class="form-control" [(ngModel)]="selectedLevel" (change)="selected()">
+              <option value="">Select city...</option>
+              <option *ngFor="let c of city" [value]="c.city">{{c.city}}</option>
+            </select>
+          </div>
+        </form>
+
+        <button (click)="callapi()" class="col-md-6 green">Submit</button>
+      </div>
+      <button (click)="onLogout()" class="col-md-2 green logout">Log Out</button>
+      <button routerLink="/update" class="col-md-2 green logout">Update Password</button>
+    </div>
+
+    <img src="https://i.pinimg.com/originals/43/68/68/436868099558915fff3b766153e63908.png" alt="">
+  </div>
+
+
+  <div>
+
+<app-card *ngIf="he" [fData]="fData"></app-card>
+  </div>

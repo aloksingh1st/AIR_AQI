@@ -1,0 +1,18 @@
+<div *ngFor="let v of wishdata" class="main">
+    <div>
+        <!-- {{wishdata}} -->
+        {{v?.city}}, {{v?.state}}, {{v?.country}}
+    </div>
+
+    <div>
+        AQI : {{v?.current.pollution.aqius}}
+    </div>
+    <div class="button-group">
+
+        <button (click)="viewMore(v?.city, v?.country)">View More</button>
+        <button (click)="delete(v?.city)">Delete</button>
+    </div>
+</div>
+
+
+<app-card *ngIf="he" [fData]="wishdata[index]"></app-card>

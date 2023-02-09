@@ -1,0 +1,28 @@
+button{
+/* margin: 0 2%; */
+background-color:#009879 ;
+color: white;
+font-size: 1.2rem;
+padding: 1rem;
+border-radius: 10px;
+height: 70px;
+cursor: pointer;
+}
+
+div.main{
+    border: 1px solid black;
+    margin: 20px;
+    align-items: center;
+    display: flex;
+}
+
+div.main .button-group{
+    float: right;
+    margin-left: 60%;
+}
+
+
+div.main *{
+    margin: 10px;
+    font-size: larger;
+}

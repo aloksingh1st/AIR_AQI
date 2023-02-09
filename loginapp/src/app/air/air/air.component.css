@@ -1,0 +1,19 @@
+.row{
+    margin: 2rem auto;
+    
+}
+
+
+.green{
+    background-color: #009879;
+    padding: 12px;
+    color: wheat;
+}
+
+.logout{
+    height: 100px;
+}
+
+img{
+    float: right;
+}
